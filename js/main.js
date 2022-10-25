@@ -38,6 +38,10 @@ for( let i = 1; i <= 100; i++ ) {
         item.innerHTML = i;
     }
 
+    item.addEventListener("click", function() {
+        item.classList.toggle("bg-yellow");
+    });
+
     // inserire l'item nel suo contenitore "tableContainer"
     tableContainer.append(item);
 }
